@@ -1,0 +1,23 @@
+[book]
+title = "Study mdBook"
+authors = ["kkAyataka"]
+language = "ja"
+multilingual = false
+src = "docs"
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.alerts]
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[preprocessor.emojicodes]
+
+[output.html]
+mathjax-support = true
+additional-js = ["./js/mermaid.min.js", "./js/mermaid-init.js"]
+
+#[output.pdf]
